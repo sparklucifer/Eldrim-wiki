@@ -11,7 +11,7 @@
   --gold:#C9A84C;--gl:#F0D070;--gd:#7A6130;
   --ink:#080605;--parch:#F5EDD8;
   --cbg:rgba(10,8,5,0.99);
-  --bdr:rgba(201,168,76,0.2);--bdrb:rgba(201,168,76,0.55);
+  --bdr:rgba(201,168,76,0.5);--bdrb:rgba(201,168,76,0.55);
   --red:#C43020;--green:#30B860;--blue:#2878C8;
   --orange:#E07830;--purple:#8830C0;--teal:#189080;
 }
@@ -72,10 +72,10 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--ink);color:var
 #srch:focus{border-color:rgba(201,168,76,.5);}
 #srch::placeholder{color:rgba(245,237,216,.25);font-style:italic;}
 .sico{position:absolute;left:7px;top:50%;transform:translateY(-50%);color:rgba(201,168,76,.45);font-size:11px;pointer-events:none;}
-#ftog{display:none;width:100%;align-items:center;justify-content:center;gap:6px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(201,168,76,.55);background:none;border:none;cursor:pointer;padding:3px 0 2px;border-top:1px solid var(--bdr);margin-top:2px;}
+#ftog{display:flex;width:100%;align-items:center;justify-content:center;gap:6px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(201,168,76,.95);background:none;border:none;cursor:pointer;padding:3px 0 2px;border-top:1px solid var(--bdr);margin-top:2px;}
 .fl{flex:1;height:1px;background:var(--bdr);}
-@media(max-width:600px){#ftog{display:flex;}#fpanel{max-height:0;overflow:hidden;transition:max-height .3s ease;}#fpanel.open{max-height:320px;overflow-y:auto;}}
-@media(min-width:601px){#fpanel{display:block!important;overflow:visible;}#ftog{display:none!important;}}
+#fpanel{max-height:0;overflow:hidden;transition:max-height .35s ease;}
+#fpanel.open{max-height:400px;overflow-y:auto;}
 .frow{display:flex;align-items:center;gap:3px;overflow-x:auto;padding:2px 0;scrollbar-width:none;flex-wrap:wrap;}
 .frow::-webkit-scrollbar{display:none;}
 .frow+.frow{margin-top:2px;}
@@ -18079,7 +18079,7 @@ const STATIC_DATA = {
       ]
     }
   ]
-}
+};
 // ═══════════════════════════════════════════════════════════════
 
 // ═══ DATA ═══
