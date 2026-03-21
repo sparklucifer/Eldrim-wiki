@@ -18804,6 +18804,34 @@ const STATIC_DATA = {
     }
   ]
 };
+// ═══════════════════════════════════════════════════════════════
+
+// ═══ DATA ═══
+let DB={characters:[],cards:[],relationships:[],organizations:[],events:[],locations:[]};
+let GRAPH_BUILT=false,initialFitDone=false;
+
+const REL_COLORS={
+  family:'#30B860',
+  romantic:'#9040C0',spouse:'#9040C0',
+  enemy:'#C43020',hostile:'#C43020',
+  ally:'#3CB870',strategic_partner:'#3CB870',
+  institutional_peer:'#2878C8',
+  commanding:'#C9A84C',political:'#C9A84C',patron_client:'#C9A84C',
+  survivor_bond:'#189080',
+  protective:'#E07830',
+  mentor_student:'#888888',mentor:'#888888',
+  colleague:'#585858',service:'#585858',
+  roommate:'#484848',classmate:'#484848',
+  acquaintance:'#444444',
+  brief_encounter:'#363636',referenced_only:'#363636',
+  one_sided_interest:'#9040C0',
+  estranged_family:'#307050',unconfirmed_family:'#307050',
+  historical:'#5a5a3a',
+  suspected:'#C9A84C',
+  friend:'#50B0D0',
+  duplicate:'#FF9050',
+  unknown:'#404040'
+};
 
 const MINOR_REL_TYPES=new Set(['brief_encounter','referenced_only','acquaintance','service','roommate','classmate','one_sided_interest','historical','colleague']);
 
